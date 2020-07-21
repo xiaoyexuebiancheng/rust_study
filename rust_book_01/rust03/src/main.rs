@@ -28,6 +28,14 @@ fn main() {
     println!("s = {}",s);
     println!("\n");
 
+    //另一个隐藏与解隐藏的例子
+    let x = 6;
+    {
+        let x = "String";   //x = 6被隐藏
+        println!("{}",x);
+    }
+    println!("{}",x);   //x = "String"生命周期结束，x = 6被解隐藏
+
     //四种基本type
     //整形推荐i32，总体最快
     //浮点推荐f64，与f32速度一样但是精度更高
