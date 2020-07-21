@@ -8,7 +8,7 @@ fn main() {
     // a = 7;   //没有加mut是不可修改绑定的值
     println!("a = {}",a);
 
-    let mut b = 6;  //加了mut表示b的绑定值可以修改
+    let mut b = 6;  //加了mut关键字用来表示b的绑定值可以修改
     println!("b = {}", b);    
     b = 8;
     println!("b = {}", b);
