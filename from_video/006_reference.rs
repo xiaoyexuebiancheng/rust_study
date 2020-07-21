@@ -8,12 +8,12 @@ fn main(){
     println!("{}",s3);
 
     //引用 &
-    //创建一个指向值的引用，但不会拥有，因为不拥有，所以，当引用结束生命周期不会被释放
     let s1 = String::from("test");
     let len = calcute_length(s1);
     println!("{}",len); 
     // println!("{}",s1);//被move释放，不能使用
 
+    //创建一个指向值的引用，但不会拥有，因为不拥有，所以，当引用结束生命周期不会被释放
     let s2 = String::from("test");
     let len = calcute_length2(&s2);//使用引用,引用是不能修改
     println!("{}",len); 
