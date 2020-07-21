@@ -58,7 +58,7 @@ fn main() {
     let a:[i32;5]; //(与其他主流语言数组内几个元素表示方法不一样)
     // println!("{}",a[0]);//输出没有初始化元素，报错
     //let mut b:[i32;5];//数组不需要用mut,加mut报warning
-
+    
     a = [6,7,8,9,10];
     println!("{:?}\n",a);
     // println!("{}",a[10]);//越界访问，报错
@@ -88,6 +88,7 @@ fn main() {
     }
     // 一条判断 if{}   二选判断 if{}else{}
     // if 5{println!("5")} //报错，if判断的必须是bool型
+                //直接判断0与1一样报错，会被判断为整型，必须是true与false
 
     //if在let语句中运用
     let x = if number == 5{
