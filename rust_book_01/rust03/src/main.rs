@@ -86,7 +86,7 @@ fn main() {
         println!("number > 5");
     }
     // 一条判断 if{}   二选判断 if{}else{}
-    // if 5{println!("5")} //报错，if判断的必须是bool型、
+    // if 5{println!("5")} //报错，if判断的必须是bool型
 
     //if在let语句中运用
     let x = if number == 5{
